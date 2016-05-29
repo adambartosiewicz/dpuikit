@@ -1,0 +1,211 @@
+// Zl Buttons
+.btn-zl-blue {
+	.dp-button-variant(@white, @sea-green, #30c2c3, #1facad, rgba(163, 225, 232, .15), rgba(0, 171, 190, .15), 1px rgb(0, 168, 172) solid, 0px 1px 1px 0px rgba(0, 0, 0, 0.15));
+	font-weight: bold;
+}
+
+.btn-zl-mobile-blue {
+	.button-variant(@white, @main-color, @main-color-dark);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+	.box-shadow(0 1px 0 0 rgba(100, 100, 100, .3));
+	font-weight: bold;
+}
+
+.btn-zl-white {
+	.dp-button-variant(@dpGrayDarkest, @white, #f4f7f6, #e1e6e5, rgba(255, 255, 255, .2), rgba(233, 235, 235, .2), 1px rgb(233, 235, 235) solid, 0px 1px 1px 0px rgba(0, 0, 0, 0.05));
+}
+
+.btn-zl-green {
+	.dp-button-variant(@white, @green, #2fb769, #1da355, rgba(163, 225, 232, .15), rgba(0, 171, 190, .15), 1px #24a058 solid, 0px 1px 1px 0px rgba(0, 0, 0, 0.05));
+	font-weight: bold;
+}
+
+.btn-zl-facebook {
+	.button-variant(@white, #35518f, #3b5387);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+	.box-shadow(0 1px 0 0 rgba(100, 100, 100, .3));
+}
+
+.btn-zl-vkontakte {
+	.button-variant(@white, #5873a3, #4e6998);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+	.box-shadow(0 1px 0 0 rgba(100, 100, 100, .3));
+}
+
+.btn-zl-flat-transparent {
+	background: transparent;
+	.box-shadow(none);
+	border: 1px @white solid;
+}
+
+.btn-calendar {
+	.btn-zl-blue;
+}
+
+.btn-zl-facebook, .btn-zl-vkontakte {
+	&.btn {
+		padding: 12px 16px 12px;
+	}
+
+	&.btn-sm {
+		padding: 6px 10px 4px;
+		.border-radius(4px);
+	}
+
+	&.btn-lg {
+		padding: 13px 20px 11px;
+	}
+}
+
+.btn-calendar {
+	position: relative;
+
+	i {
+		position: absolute;
+	}
+
+	&.btn {
+		padding-left: 35px;
+
+		i {
+			top: 7px;
+			left: 12px
+		}
+	}
+
+	&.btn-sm {
+		padding-left: 30px;
+		.border-radius(4px);
+
+		i {
+			top: 5px;
+			left: 8px;
+		}
+	}
+
+	&.btn-lg {
+		padding-left: 55px;
+
+		i {
+			top: 7px;
+			left: 17px;
+		}
+	}
+}
+
+.btn-zl-facebook,
+.btn-zl-vkontakte {
+	position: relative;
+	i {
+		position: absolute;
+	}
+	&.btn {
+		padding-left: 40px;
+	}
+	&.btn-sm {
+		padding-left: 30px;
+	}
+	&.btn-lg {
+		padding-left: 55px;
+	}
+}
+
+.btn-zl-facebook {
+	&.btn {
+		i {
+			top: 10px;
+			left: 12px
+		}
+	}
+
+	&.btn-sm {
+		i {
+			top: 4px;
+			left: 8px;
+		}
+	}
+
+	&.btn-lg {
+		i {
+			top: 9px;
+			left: 18px;
+		}
+	}
+}
+
+.btn-zl-vkontakte {
+	&.btn {
+		i {
+			top: 14px;
+			left: 12px
+		}
+	}
+
+	&.btn-sm {
+		i {
+			top: 7px;
+			left: 8px;
+		}
+	}
+
+	&.btn-lg {
+		i {
+			top: 17px;
+			left: 18px;
+		}
+	}
+}
+
+.btn-opinion {
+	position: relative;
+	.btn-zl-blue;
+
+	i {
+		position: absolute;
+	}
+
+	&.btn {
+		padding-left: 40px;
+
+		i {
+			left: 11px;
+			top: 8px;
+		}
+	}
+}
+
+.btn {
+	font-size: 14px;
+
+	&.btn-lg {
+		font-size: 16px;
+		padding-bottom: 9px;
+	}
+
+	&.btn-sm {
+		font-size: 12px;
+	}
+}
+
+.btn-opinion-sm {
+	padding-left: 30px;
+	position: relative;
+	.dp-button-variant(#555, @white, #f4f7f6, #e1e6e5, rgba(255, 255, 255, .2), rgba(233, 235, 235, .2), 1px rgb(233, 235, 235) solid, 0px 1px 1px 0px rgba(0, 0, 0, 0.05));
+	i {
+		position: absolute;
+		top: 7px;
+		left: 8px;
+	}
+	&--empty {
+		padding-left: 10px;
+	}
+
+	&--inactive {
+		background-color: #e1e6e5;
+
+		&:hover {
+			background-color: #e1e6e5;
+			cursor: default;
+		}
+	}
+}

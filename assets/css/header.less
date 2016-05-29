@@ -1,0 +1,202 @@
+
+#header {
+	position: relative;
+	background: @sea-green;
+	.clearfix;
+	min-width: 1010px;
+	min-height: 60px;
+
+	.inside-icon {
+		position: absolute;
+		left: 5px;
+		top: 5px;
+		font-size: 20px;
+		color: @red;
+		cursor: default;
+	}
+
+	.table-block {
+		width: 100%;
+	}
+
+	.logo {
+		position: relative;
+
+		img {
+			height: 100%;
+			max-height: 35px;
+		}
+
+		&.logo-adds-offset {
+			top: -6px;
+		}
+	}
+
+	.logo-container {
+		position: relative;
+		width: 260px;
+		padding-top: 13px;
+
+		.logo-adds {
+			position: absolute;
+			left: 4px;
+			top: 42px;
+			font-weight: normal;
+			color: @white;
+		}
+
+		.international-text, .small-logo-text {
+			font-size: 11px;
+
+			i {
+				color: @white;
+			}
+		}
+
+		.small-logo-text {
+			display: block;
+			width: 228px;
+			text-align: right;
+			top: 40px;
+			opacity: .8 !important;
+		}
+
+		.city-context {
+			font-size: 11px;
+			width: 100%;
+			margin-right: 15px;
+
+			a.dropdown-button {
+				color: @white;
+			}
+
+			.dropdown {
+				float: right;
+				margin-top: 2px;
+				margin-right: 45px;
+			}
+
+			.glyphicon {
+				font-size: 8px;
+			}
+
+			.dropdown-menu {
+				max-height: 250px;
+				overflow-y: auto;
+			}
+		}
+	}
+
+	#headbar-right {
+		float: right;
+
+		a {
+			color: @white;
+		}
+
+		.dropdown-menu a {
+			color: @dpGrayDarkest;
+		}
+
+		.need-help {
+			margin: 10px 0;
+			text-align: right;
+			i {
+				color: @silver-dark;
+				top: 2px;
+			}
+		}
+	}
+
+	#user-topmenu {
+		padding: 11px 35px 9px 0;
+		min-height: 58px;
+		.clearfix();
+
+		.dropdown-button {
+			text-decoration: none;
+			outline: none;
+			color: @white;
+			margin-left: 15px;
+			position: relative;
+			display: block;
+			text-align: right;
+			line-height: 38px;
+			font-size: 13px;
+
+			.glyphicon-play {
+				position: absolute;
+				right: -22px;
+				top: 0;
+				font-size: 11px;
+				line-height: 38px;
+			}
+		}
+
+		.dropdown-menu {
+			a {
+				color: @dpGrayDarkest;
+				padding-left: 40px;
+				position: relative;
+			}
+
+			i {
+				color: @silver-dark;
+				position: absolute;
+				left: 15px;
+				top: 4px;
+
+				&.sprite-retina-calendar-gray-small {
+					left: 13px;
+				}
+			}
+
+			.sprite-rwd-calendar-gray-small-no-shadow {
+				opacity: 0.5;
+				position: relative;
+				top: 3px
+			}
+		}
+	}
+
+	#access-topmenu a {
+		font-size: 13px;
+	}
+
+	#access-topmenu, .ask-doctor-link {
+		padding: 22px 10px 19px 0;
+		margin-bottom: 0;
+		text-align: right;
+		line-height: 16px;
+		font-size: 13px;
+	}
+
+	.ask-doctor-link {
+
+		a {
+			position: relative;
+			padding-left: 25px;
+
+			i {
+				left: 0;
+				top: -2px;
+				position: absolute;
+			}
+		}
+	}
+
+	#doctor-topmenu {
+		.btn {
+			margin: 15px 0 0 0;
+			max-width: 150px;
+			font-size: 13px;
+			#gradient > .vertical(#59cfd0, #44c7ca);
+			.text-ellipsis();
+
+			&:hover {
+				#gradient > .vertical(transparent, transparent);
+				background-color: #27a7ab;
+			}
+		}
+	}
+}

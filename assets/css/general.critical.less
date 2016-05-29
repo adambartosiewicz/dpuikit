@@ -1,0 +1,56 @@
+
+.container {
+	width: @container-desktop !important;
+
+	h1, h2, h3, h4 {
+		font-weight: bold;
+		color: @dpGrayDarkest;
+		margin: 0;
+	}
+
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	> h2 {
+		margin: 0 0 10px 0;
+	}
+
+	h3, h4 {
+		font-size: 16px;
+	}
+}
+
+a, .btn-link {
+	color: @link;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		color: lighten(@link, 2%);
+	}
+}
+
+body {
+	font: normal 14px/1.6 Helvetica, Trebuchet MS, Helvetica, Arial, sans-serif !important;
+	background: @bg;
+	margin: 0 !important;
+	color: @dpGrayDarkest;
+	-webkit-font-smoothing: antialiased !important;
+	text-rendering: optimizeLegibility;
+
+	&[data-prevent-hash-scrolling="true"] {
+		position: fixed;
+		overflow-y: scroll;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1010px) and (max-width: 1040px) {
+	body {
+		overflow-x: hidden !important;
+	}
+}
