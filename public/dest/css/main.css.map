@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///webpack:///assets/css/login.scss"],"names":[],"mappings":"AAAA;EACE,iBAAiB,EAClB","file":"../css/main.css","sourcesContent":["body {\n  background: #fff;\n}\n\n\n/** WEBPACK FOOTER **\n ** webpack:///assets/css/login.scss\n **/"],"sourceRoot":""}
